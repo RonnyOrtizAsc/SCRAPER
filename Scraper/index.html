@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>ORBE Research</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+>
+
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
+
+</head>
+
+<body>
+
+<!-- =========================================
+     SIDEBAR
+========================================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-mark">
+            O
+        </div>
+
+        <div class="logo-text">
+
+            <h1>ORBE</h1>
+
+            <span>
+                CONTENT RESEARCH
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <nav class="nav">
+
+        <button
+            class="nav-item active"
+            data-section="research"
+        >
+
+            <span class="nav-icon">⌕</span>
+
+            <span>
+                Investigación
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-section="library"
+        >
+
+            <span class="nav-icon">▣</span>
+
+            <span>
+                Biblioteca
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-section="analysis"
+        >
+
+            <span class="nav-icon">◈</span>
+
+            <span>
+                Análisis
+            </span>
+
+        </button>
+
+    </nav>
+
+
+    <div class="sidebar-footer">
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            Sistema activo
+
+        </div>
+
+        <span class="company-name">
+            ORBE C FILMS
+        </span>
+
+    </div>
+
+</aside>
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main class="main-content">
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div>
+
+            <p class="eyebrow">
+                CONTENT INTELLIGENCE
+            </p>
+
+            <h2 id="pageTitle">
+                Investiga contenido que funciona.
+            </h2>
+
+        </div>
+
+
+        <div class="selection-counter">
+
+            <span>
+                VIDEOS SELECCIONADOS
+            </span>
+
+            <strong id="selectedCount">
+                0
+            </strong>
+
+            <small>
+                / 20
+            </small>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         RESEARCH
+    ========================================= -->
+
+    <section
+        id="research"
+        class="page-section active"
+    >
+
+
+        <!-- SEARCH PANEL -->
+
+        <div class="search-panel">
+
+
+            <div class="search-panel-header">
+
+                <div>
+
+                    <p class="section-label">
+                        NUEVA INVESTIGACIÓN
+                    </p>
+
+                    <h3>
+                        Pega una búsqueda
+                    </h3>
+
+                </div>
+
+
+                <div class="platform-badges">
+
+                    <span class="platform">
+                        TikTok
+                    </span>
+
+                    <span class="platform">
+                        Instagram
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p class="search-description">
+
+                Pega un enlace de búsqueda o contenido
+                para investigar sus videos y comparar
+                sus métricas.
+
+            </p>
+
+
+            <div class="url-input-group">
+
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="Pega aquí una URL de TikTok o Instagram..."
+                >
+
+                <select id="amountSelect" title="Cantidad de videos a traer">
+                    <option value="5">5 videos</option>
+                    <option value="10" selected>10 videos</option>
+                    <option value="15">15 videos</option>
+                    <option value="20">20 videos</option>
+                </select>
+
+                <button
+                    id="searchBtn"
+                >
+
+                    <span>
+                        Buscar videos
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <div class="examples">
+
+                <span>
+                    EJEMPLO:
+                </span>
+
+                <code>
+                    tiktok.com/search?q=sketches
+                </code>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- INFO -->
+
+        <div class="research-info">
+
+
+            <div class="info-item">
+
+                <span class="info-number">
+                    01
+                </span>
+
+                <div>
+
+                    <strong>
+                        Pega
+                    </strong>
+
+                    <p>
+                        Una búsqueda o enlace.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-arrow">
+                →
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-number">
+                    02
+                </span>
+
+                <div>
+
+                    <strong>
+                        Selecciona
+                    </strong>
+
+                    <p>
+                        Los videos que quieras.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-arrow">
+                →
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-number">
+                    03
+                </span>
+
+                <div>
+
+                    <strong>
+                        Analiza
+                    </strong>
+
+                    <p>
+                        Descubre patrones.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- RESULTS HEADER -->
+
+        <div class="results-header">
+
+            <div>
+
+                <p class="section-label">
+                    RESULTADOS
+                </p>
+
+                <h3 id="resultsTitle">
+                    Esperando una búsqueda
+                </h3>
+
+            </div>
+
+
+            <div
+                id="resultsActions"
+                class="results-actions hidden"
+            >
+
+                <button
+                    id="selectAllBtn"
+                    class="secondary-btn"
+                >
+                    Seleccionar todos
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESULTS -->
+
+        <div
+            id="resultsGrid"
+            class="results-grid"
+        >
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    Comienza una investigación.
+                </h3>
+
+                <p>
+                    Pega una URL para buscar referencias.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTINUE -->
+
+        <div
+            id="continuePanel"
+            class="continue-panel hidden"
+        >
+
+            <div>
+
+                <span class="section-label">
+                    SIGUIENTE PASO
+                </span>
+
+                <h3>
+                    Analizar videos seleccionados
+                </h3>
+
+                <p>
+                    Se analizarán las métricas y patrones
+                    de tus videos seleccionados.
+                </p>
+
+            </div>
+
+
+            <button
+                id="continueBtn"
+            >
+
+                Analizar selección
+                →
+
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =========================================
+         LIBRARY
+    ========================================= -->
+
+    <section
+        id="library"
+        class="page-section"
+    >
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                BIBLIOTECA
+            </p>
+
+            <h3>
+                Videos guardados
+            </h3>
+
+            <p>
+                Todas las referencias seleccionadas
+                durante tus investigaciones.
+            </p>
+
+        </div>
+
+
+        <div
+            id="libraryGrid"
+            class="results-grid"
+        ></div>
+
+    </section>
+
+
+    <!-- =========================================
+         ANALYSIS
+    ========================================= -->
+
+    <section
+        id="analysis"
+        class="page-section"
+    >
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                CONTENT INTELLIGENCE
+            </p>
+
+            <h3>
+                Análisis de investigación
+            </h3>
+
+            <p>
+                Compara el rendimiento de los videos
+                seleccionados.
+            </p>
+
+        </div>
+
+
+        <!-- METRICS -->
+
+        <div
+            id="metricsGrid"
+            class="metrics-grid"
+        >
+
+            <div class="metric-card">
+
+                <span>
+                    VISTAS PROMEDIO
+                </span>
+
+                <strong id="avgViews">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>
+                    LIKES PROMEDIO
+                </span>
+
+                <strong id="avgLikes">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>
+                    COMENTARIOS
+                </span>
+
+                <strong id="avgComments">
+                    —
+                </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <span>
+                    ENGAGEMENT
+                </span>
+
+                <strong id="avgEngagement">
+                    —
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- TABLE -->
+
+        <div class="analysis-table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            VIDEO
+                        </th>
+
+                        <th>
+                            VISTAS
+                        </th>
+
+                        <th>
+                            LIKES
+                        </th>
+
+                        <th>
+                            COMENTARIOS
+                        </th>
+
+                        <th>
+                            COMPARTIDOS
+                        </th>
+
+                        <th>
+                            GUARDADOS
+                        </th>
+
+                        <th>
+                            ENGAGEMENT
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody
+                    id="analysisTable"
+                >
+
+                    <tr>
+
+                        <td
+                            colspan="7"
+                            class="table-empty"
+                        >
+
+                            Selecciona videos para
+                            comenzar el análisis.
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- INSIGHTS -->
+
+        <div
+            id="insights"
+            class="insights hidden"
+        >
+
+            <p class="section-label">
+                INSIGHTS
+            </p>
+
+            <h3>
+                Patrones encontrados
+            </h3>
+
+
+            <div class="insights-grid">
+
+
+                <div class="insight-card">
+
+                    <span>
+                        👁
+                    </span>
+
+                    <h4>
+                        Mayor alcance
+                    </h4>
+
+                    <p id="topVideoInsight">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <span>
+                        ❤️
+                    </span>
+
+                    <h4>
+                        Mejor engagement
+                    </h4>
+
+                    <p id="engagementInsight">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <span>
+                        🎬
+                    </span>
+
+                    <h4>
+                        Idea para Orbe
+                    </h4>
+
+                    <p>
+                        Analiza qué situación genera
+                        más interacción y crea una
+                        versión original adaptada a
+                        la realidad de una productora.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+<!-- TOAST -->
+
+<div
+    id="toast"
+    class="toast"
+>
+
+    <span id="toastMessage"></span>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
