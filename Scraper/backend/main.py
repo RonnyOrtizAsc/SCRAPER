@@ -2,8 +2,14 @@ import os
 from urllib.parse import urlparse, parse_qs
 
 import requests
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+
+# Carga las variables definidas en un archivo .env (en la misma carpeta
+# que este archivo) hacia el entorno, para no tener que escribir
+# "set APIFY_API_TOKEN=..." cada vez que abres una terminal nueva.
+load_dotenv()
 
 app = FastAPI()
 
@@ -20,16 +26,13 @@ app.add_middleware(
 # =========================================
 
 # Crea una cuenta gratis en https://apify.com, genera un token en
-# Settings > Integrations, y ponlo como variable de entorno ANTES
-# de levantar el servidor:
+# Settings > Integrations, y ponlo en un archivo ".env" (en esta misma
+# carpeta, junto a main.py) con este contenido:
 #
-#   Windows (PowerShell):
-#       $env:APIFY_API_TOKEN="tu_token_aqui"
-#       uvicorn main:app --reload --port 8000
+#   APIFY_API_TOKEN=tu_token_aqui
 #
-#   (tiene que ser en la MISMA terminal donde corres uvicorn)
-#
-# NUNCA lo escribas directo en el código.
+# El archivo .env NUNCA se sube a git (ya está en .gitignore).
+# Usa .env.example como referencia de qué variable crear.
 APIFY_API_TOKEN = os.environ.get("APIFY_API_TOKEN")
 
 APIFY_BASE_URL = "https://api.apify.com/v2/acts"
